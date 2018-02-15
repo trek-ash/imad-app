@@ -6,15 +6,22 @@ var app = express();
 app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.sendFile(path.join(__dirname, 'portfolio', 'index.html'));
 });
 
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+app.get('/portfolio/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'portfolio', 'style.css'));
 });
 
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+app.get('/portfolio/script.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'portfolio', 'script.js'));
+});
+
+app.get('/portfolio/pic1.jpg',function(req,res){
+ res.sendFile(path.join(__dirname,'portfolio','pic1.jpg'));
+});
+app.get('/portfolio/yash.jpg',function(req,res){
+ res.sendFile(path.join(__dirname,'portfolio','yash.jpg'));
 });
 
 

@@ -1,3 +1,8 @@
+$(document).ready(function(){
+$(window).scroll(function(){    
+                $(".card").animate({'opacity':'1'},1500);
+             });
+});
 var txt="Dreamer";
 var txt1="Designer";
 var txt2="Developer";
