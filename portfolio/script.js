@@ -22,7 +22,7 @@ function typeWriter() {
 		  }
 		else {
 			j=txt.length;
-			setTimeout(erase, 500);
+			setTimeout(erase, 1500);
 		}
 		}
 
@@ -43,7 +43,7 @@ function typeWriter1() {
 		  }
 		else {
 			j=txt1.length;
-			setTimeout(erase1, z);
+			setTimeout(erase1, 1500);
 		}
 		}
 
@@ -64,7 +64,7 @@ function typeWriter2() {
 		  }
 		else {
 			j=txt2.length;
-			setTimeout(erase2, z);
+			setTimeout(erase2, 1500);
 		}
 		}
 
@@ -85,7 +85,7 @@ function typeWriter3() {
 		  }
 		else {
 			j=txt3.length;
-			setTimeout(erase3, z);
+			setTimeout(erase3, 1500);
 		}
 		}
 
