@@ -22,7 +22,7 @@ function typeWriter() {
 		  }
 		else {
 			j=txt.length;
-			setTimeout(erase, 500);
+			setTimeout(erase, 5000);
 		}
 		}
 
