@@ -7,10 +7,10 @@ var txt="Dreamer";
 var txt1="Designer";
 var txt2="Developer";
 var txt3="Learner";
-			var speed=150;
+			var speed=350;
 			var i=0;
 			var j=txt.length;
-			var z=100;
+			var z=300;
 window.addEventListener('load', function() {
 	typeWriter();
 });
