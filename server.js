@@ -13,6 +13,7 @@ app.get('/portfolio/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'portfolio', 'style.css'));
 });
 
+<<<<<<< HEAD
 app.get('/portfolio/script.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'portfolio', 'script.js'));
 });
@@ -22,6 +23,10 @@ app.get('/portfolio/pic1.jpg',function(req,res){
 });
 app.get('/portfolio/yash.jpg',function(req,res){
  res.sendFile(path.join(__dirname,'portfolio','yash.jpg'));
+=======
+app.get('/ui/c.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'c.jpg'));
+>>>>>>> fbc3c34118b46e5ad082d1db52be3128edc038d1
 });
 
 
