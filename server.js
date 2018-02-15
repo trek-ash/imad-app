@@ -6,27 +6,15 @@ var app = express();
 app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'portfolio', 'index.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/portfolio/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'portfolio', 'style.css'));
+app.get('/ui/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/portfolio/script.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'portfolio', 'script.js'));
-});
-app.get('/portfolio/he.js',function(req,res){
- res.sendFile(path.join(_dirname,'portfolio','he.js'));
-});
-app.get('/portfolio/img/pic1.jpg',function(req,res){
- res.sendFile(path.join(_dirname,'portfolio/img','pic1.jpg'));
-});
-app.get('/portfolio/img/yash.jpg',function(req,res){
- res.sendFile(path.join(_dirname,'portfolio/img','yash.jpg'));
-});
-app.get('/portfolio/img/yash1.jpg',function(req,res){
- res.sendFile(path.join(_dirname,'portfolio/img','yash.jpg'));
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
 
