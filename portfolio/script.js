@@ -12,16 +12,7 @@ var txt3="Learner";
 			var j=txt.length;
 			var z=100;
 window.addEventListener('load', function() {
-
-		
-		
-	
-	
-	
-		typeWriter();
-		
-		
-
+	typeWriter();
 });
 function typeWriter() {
   		if (i < txt.length) {
@@ -31,7 +22,7 @@ function typeWriter() {
 		  }
 		else {
 			j=txt.length;
-			setTimeout(erase, z);
+			setTimeout(erase, 500);
 		}
 		}
 
