@@ -21,9 +21,12 @@
 
 		<h1><p>A <span id="move1"></span><span class="anim">|</span></p></h1>
 	</div>
-	<button class="about btn">
+	<a href="#about" style="color: white">
+	<button class="about btn" >
 		<b>About Me</b>
+
 	</button>
+	</a>
 </div>
 
 <div class="row" style="background-color: #E0E0E0" >
@@ -31,7 +34,7 @@
 	<div class="col-md-10 content">
 		
 		<br><br>
-		<div class="card container-fluid">
+		<div class="card container-fluid" id="about">
 			<h2 style="font-family: 'Rammetto One', cursive;">About Me</h2><hr style="border: none;height: 2px;color:grey;background-color:grey;"></h2>
 			<br>
 			<div class="media-object">
@@ -138,8 +141,8 @@
 			<div class="col-md-9" style="border-left: 2px solid white">
 			<br><br><br><br><br><br>
 			</div>
+			</div>
 		</div>
-	</div>
 	<br><br>
 	<div class="card">
 			<h2>Get In Touch</h2>
@@ -196,9 +199,41 @@
 	</div>
 	
 		<br><br><br>
+	
+	<div class="card" id="Remark">
+		<h2>Leave A Remark</h2>
+			<hr>
+			<br>
+		<input type="text" id="name" class="form-control" placeholder="Enter Name" required>	
+		<br>
+		<textarea class="form-control" rows="10" cols="20" id="comment" placeholder="Your Remarks" required></textarea>
+		<br>
+		<button type="button" class="butn" onclick="Remark()">Post</button>
+		<hr>
+		<h4>Recent Remarks</h4>
+		<div class="media remark" >
+			<div class="media-body">
+				<h4 class="media-heading"><b><i> &nbspAuthor</i></b> says: </h4>
+				<p style="background-color:white;padding:5px;margin:0px;color: black;">
+		 			This is in Progress.
+		 		</p>	
+			</div>
+		</div>	
+		<br>
 	</div>
+
+	
+	</div>
+	
 	<div class="col-md-1 Sidebar"> &nbsp</div>
+
+	
+	
+
 </div>
-<div class="container-fluid" style="background-color: black;color: white;text-align: center;"><br><br>Developed by:-Yash<br><br></div>
+
+<div class="container-fluid" style="background-color: black;color: white;text-align: center;">
+<br><br>Developed by:-Yash<br><br>
+</div>
 </body>
 </html>

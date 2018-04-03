@@ -73,3 +73,17 @@ animation:blinka 1s infinite;
 	background-color: transparent;
 	padding: 10px;
 }
+.remark{
+	border-radius: 5px;
+	padding-top: 17px !important;
+	padding: 2px;
+	
+
+	
+
+	background-color:#424242;
+	color:white;
+	
+	text-align: left;
+
+}

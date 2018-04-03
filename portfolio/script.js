@@ -10,9 +10,9 @@ var txt3="Learner";
 			var speed=150;
 			var i=0;
 			var j=txt.length;
-			var z=150;
+			var z=100;
 window.addEventListener('load', function() {
-	typeWriter();
+		typeWriter();
 });
 function typeWriter() {
   		if (i < txt.length) {
@@ -22,10 +22,9 @@ function typeWriter() {
 		  }
 		else {
 			j=txt.length;
-			setTimeout(erase, 1500);
+			setTimeout(erase, z);
 		}
 		}
-
 function erase(){
 			if(j>=0){
 				document.getElementById("move1").innerHTML=txt.substr(0,j--);
@@ -43,10 +42,9 @@ function typeWriter1() {
 		  }
 		else {
 			j=txt1.length;
-			setTimeout(erase1, 1500);
+			setTimeout(erase1, z);
 		}
 		}
-
 function erase1(){
 			if(j>=0){
 				document.getElementById("move1").innerHTML=txt1.substr(0,j--);
@@ -64,7 +62,7 @@ function typeWriter2() {
 		  }
 		else {
 			j=txt2.length;
-			setTimeout(erase2, 1500);
+			setTimeout(erase2, z);
 		}
 		}
 
@@ -85,10 +83,9 @@ function typeWriter3() {
 		  }
 		else {
 			j=txt3.length;
-			setTimeout(erase3, 1500);
+			setTimeout(erase3, z);
 		}
 		}
-
 function erase3(){
 			if(j>=0){
 				document.getElementById("move1").innerHTML=txt3.substr(0,j--);
@@ -99,3 +96,52 @@ function erase3(){
 			}
 		}
 
+
+var xhttp=new XMLHttpRequest;
+xhttp.onreadystatechange=function(){
+if(this.readystate==4 && this.status==200)
+	{
+	Remark(this);
+	}
+};
+
+xhttp.open("GET","data.xml",true);	
+xhttp.send();
+
+function Remark(xml){
+	var a=document.getElementById("Remark");
+	var name=document.getElementById("name").value;
+	var remarks=document.getElementById("comment").value;
+	if(name=="" )
+	{	
+	if(remarks=="")
+		alert("Please enter name and a remark");
+	else alert("Please enter your name"); 
+	}
+	else 
+	if(remarks=="")
+		alert("Please enter a remark");
+	else{
+	a.innerHTML+=`
+		
+		<div class="media remark" >
+			<div class="media-body">
+				<h4 class="media-heading"><b><i>  &nbsp`+ name + `</i></b> says: </h4>
+				<p style="background-color:white;padding:5px;margin:0px;color:black;">
+		 			`+remarks+`
+		 		</p>	
+			</div>
+		</div>
+		`;
+	}
+	var text="<Name>"+name+"</Name>"+
+			"<Remark>"+remarks+"</Remark";
+
+	var xmlDoc = xml.responseXML;
+	var newElement=xmlDoc.createElement("name");
+	xmlDoc.getElementByTagName("Remarks")[0].appendChild(newElement);
+	var xmlDoc=parser.parseFromString("text","text/xml");
+	xmlDoc.getElementByTagName("Remarks")[0].childnodes[0].insertData(0,name);
+
+}
+		
