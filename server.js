@@ -62,7 +62,7 @@ mongo.connect(url, function(err, db) {
 			if (err) throw err;
 		})
 	var str="Your Remark has been submitted.Thank You";
-	res.sendFile(path.join(__dirname,"portfolio","index.php"));
+	res.sendFile(path.join(__dirname, 'portfolio', 'index.html'));
 
 	})
 
