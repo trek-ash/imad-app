@@ -204,12 +204,15 @@
 		<h2>Leave A Remark</h2>
 			<hr>
 			<br>
-		<input type="text" id="name" class="form-control" placeholder="Enter Name" required>	
+		<form method="post" action="/">
+		<input type="text" id="name" name="re[name]" class="form-control" placeholder="Enter Name" required>	
 		<br>
-		<textarea class="form-control" rows="10" cols="20" id="comment" placeholder="Your Remarks" required></textarea>
+		<textarea class="form-control" name="re[remark]" rows="10" cols="20" id="comment" placeholder="Your Remarks" required></textarea>
 		<br>
-		<button type="button" class="butn" onclick="Remark()">Post</button>
+		<input type="submit" class="butn" value="submit" >
+		</form>	
 		<hr>
+
 		<h4>Recent Remarks</h4>
 		<div class="media remark" >
 			<div class="media-body">
@@ -218,7 +221,8 @@
 		 			This is in Progress.
 		 		</p>	
 			</div>
-		</div>	
+		</div>
+		
 		<br>
 	</div>
 

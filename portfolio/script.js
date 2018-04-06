@@ -108,7 +108,7 @@ if(this.readystate==4 && this.status==200)
 xhttp.open("GET","data.xml",true);	
 xhttp.send();
 
-function Remark(xml){
+function Remark(){
 	var a=document.getElementById("Remark");
 	var name=document.getElementById("name").value;
 	var remarks=document.getElementById("comment").value;
