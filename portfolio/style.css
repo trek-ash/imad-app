@@ -3,8 +3,13 @@
     25%   {opacity: 0}
     50%  {color: white;}
     75%  {opacity: 0}
-    
-
+}
+a{
+text-decoration: none;
+color: white;
+}
+a:hover{
+color: white;
 }
 
 .head1{
