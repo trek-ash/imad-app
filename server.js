@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'portfolio', 'index.html'));
 });
 app.get('/portfolio/img/procio.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'portfolio','img', 'proico.png'));
+  res.sendFile(path.join(__dirname, 'portfolio','proico.png'));
 });
 app.get('/portfolio/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'portfolio', 'style.css'));
