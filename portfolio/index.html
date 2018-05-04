@@ -8,9 +8,10 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="portfolio/style.css">	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="portfolio/script.js"></script>
-	
+		
 </head>
 <body style="overflow-x: hidden;" >
 
@@ -28,7 +29,7 @@
 	</button>
 	</a>
 </div>
-
+<div class="dots"></div>
 <div class="row" style="background-color: #E0E0E0" >
 	<div class="col-md-1 Sidebar"></div>
 	<div class="col-md-10 content">
@@ -39,7 +40,7 @@
 			<br>
 			<div class="media-object">
 				<div class="media-left img-responsive" style="height: 7px;width: 7px;">
-				<img src="portfolio/yash.jpg" style="border-radius: 200px" />
+				<img src="portfolio/yash.png" style="border-radius: 200px" />
 				</div>
 				<div class="media-body" style="text-align: justify;">
 					<center><h3 class="media-heading">Yash Singh|<small>Web Designer and Developer</small></h3></center>
@@ -48,6 +49,7 @@
 					I am a Dreamer,Learner and an aspiring Web Designer and Developer.I love working on projects based on web Designing and Development.
 					I started learnig with basics of <b>HTML,CSS</b> continued to learn <b>Javascript</b> to add on my skills of Web 
 					designing.To add on my responsive web-designing abilities,I added <b>Bootstrap</b> to my skills.To add on to my development skills,I learned <b>PHP</b>.<br>
+					I have also worked on Nodejs,Express,Socket.io,Mongodb in my projects.
 					Apart from these,I have knowledge of languages like <b>C,Java,Pyhton</b>. 
 					</p>
 					<p >
@@ -60,17 +62,29 @@
 		</div>
 		<br><br><br>
 		<div class="card" style="background-color: #424242;color: white;text-align: justify;">
-			<div class="row">
-			<div class="col-md-2 " style="top: 0px;"><br><h2>Projects</h2></div>
-			<div class="col-md-10" style="border-left: 2px solid white">
+			<div class="container " style="top: 0px;"><br><h2>Projects</h2></div>
+			<hr>
+			<div class="container-fluid" style="color: white">
 				<br>
-				<a href="http://www.yashsinghblog.wordpress.com">www.yashsinghblog.wordpress.com</a><br>
-				<a href="http://www.pnwsociety.in/assessment">www.pnwsociety.in/assessment</a><br>
+				<div class="col-md-6" >
+				<div class="protitle"><h4>Buzz-A Chat Application</h4></div>
+				<a href="https://buzznow.herokuapp.com">
+				<img src="portfolio/buzznow.png" class="img-responsive projectimg buzz" ><br></a><br>
+				</div>
+				<div class="col-md-6">
+				<div class="protitle"><h4>Blogging website -(using wordpress)</h4></div>
+				<a href="http://www.yashsinghblog.wordpress.com"><img src="portfolio/yizzy.png" class="img-responsive projectimg" ><br></a><br>
+				</div>
+				<div class="col-md-6">
+				<div class="protitle"><h4>www.pnwsociety.in/assessment</h4></div>
+				<a href="http://www.pnwsociety.in/assessment"><img src="portfolio/pnwsassessment.png" class="img-responsive projectimg"><br></a><br>
+				</div>
+				<div class="col-md-6">
 				<a href="#">www.bloggersyarn.in</a><br>
-
+				</div>
 				<br><br><br>
 			</div>
-			</div>
+			
 		</div>
 		<br><br><br>
 
@@ -204,12 +218,12 @@
 		<h2>Leave A Remark</h2>
 			<hr>
 			<br>
-		<form method="post" action="/">
+		<form method="post" action="/" class="remarkform">
 		<input type="text" id="name" name="re[name]" class="form-control" placeholder="Enter Name" required>	
 		<br>
 		<textarea class="form-control" name="re[remark]" rows="10" cols="20" id="comment" placeholder="Your Remarks" required></textarea>
 		<br>
-		<input type="submit" class="butn" value="submit" >
+		<input type="submit" class="butn" value="Submit" >
 		</form>	
 		<hr>
 

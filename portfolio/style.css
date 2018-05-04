@@ -6,7 +6,13 @@
     
 
 }
-
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	color: white;
+}
 .head1{
 background-image: url('/portfolio/pic1.jpg');
 background-position: center;
@@ -77,13 +83,19 @@ animation:blinka 1s infinite;
 	border-radius: 5px;
 	padding-top: 17px !important;
 	padding: 2px;
-	
-
-	
-
 	background-color:#424242;
 	color:white;
-	
 	text-align: left;
+}
+.projectimg{
+	height: 250px;
+	width: 100%;
+	border-radius: 5px;
+}
 
+.protitle{
+	border-left: 5px solid white;
+	padding-left: 5px!important;
+	padding: 3px;
+	margin-bottom: 7px;
 }

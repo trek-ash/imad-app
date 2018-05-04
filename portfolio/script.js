@@ -2,6 +2,13 @@ $(document).ready(function(){
 $(window).scroll(function(){    
                 $(".card").animate({'opacity':'1'},1500);
              });
+$(".buzz").mouseenter(()=>{
+$(".buzz").attr("src","as");
+});
+$(".buzz").mouseleave(()=>{
+$(".buzz").attr("src","portfolio/buzznow.png");
+});
+
 });
 var txt="Dreamer";
 var txt1="Designer";
@@ -144,4 +151,3 @@ function Remark(){
 	xmlDoc.getElementByTagName("Remarks")[0].childnodes[0].insertData(0,name);
 
 }
-		

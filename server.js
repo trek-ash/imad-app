@@ -1,8 +1,11 @@
 var express = require('express');
+var rema=require('./portfolio/he.js');
 var morgan = require('morgan');
 var path = require('path');
 var mongo = require('mongodb');
 var bodyParser=require('body-parser');
+var jsdom=require('jsdom');
+var { JSDOM } =jsdom;
 
 var app = express();
 app.use(morgan('combined'));
@@ -24,26 +27,31 @@ app.get('/portfolio/script.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'portfolio', 'script.js'));
 });
 
+app.get('/portfolio/he.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'portfolio', 'he.js'));
+});
+
 app.get('/portfolio/pic1.jpg',function(req,res){
  res.sendFile(path.join(__dirname,'portfolio','pic1.jpg'));
 });
-app.get('/portfolio/yash.jpg',function(req,res){
- res.sendFile(path.join(__dirname,'portfolio','yash.jpg'));
+app.get('/portfolio/yash.png',function(req,res){
+ res.sendFile(path.join(__dirname,'portfolio','yash.png'));
+});
+app.get('/portfolio/buzznow.png',function(req,res){
+ res.sendFile(path.join(__dirname,'portfolio','buzznow.png'));
+});
+app.get('/portfolio/yizzy.png',function(req,res){
+ res.sendFile(path.join(__dirname,'portfolio','yizzy.png'));
+});
+app.get('/portfolio/pnwsassessment.png',function(req,res){
+ res.sendFile(path.join(__dirname,'portfolio','pnwsassessment.png'));
 });
 app.get('/data.js',(req,res)=>{
 res.sendFile(path.join(__dirname,'data.js'));
 });
 
-// Do not change port, otherwise your app won't run on IMAD servers
-// Use 8080 only for local development if you already have apache running on 80
 var url="mongodb://yash:shwetasingh@ds137019.mlab.com:37019/knowyash";
-/*app.post("/", function (req, res) {
-    console.log(req.body.re.name);
-    name=req.body.re.name;
-    remark=req.body.re.remark;
-    res.sendFile(path.join(__dirname, 'portfolio', 'index.html'));
- 	
-});*/
+
 mongo.connect(url, function(err, db) {
 	if (err) throw err;
 	var dbo=db.db("knowyash");
