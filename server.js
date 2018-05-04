@@ -55,7 +55,7 @@ res.sendFile(path.join(__dirname,'data.js'));
 var url="mongodb://yash:shwetasingh@ds137019.mlab.com:37019/knowyash";
 
 mongo.connect(url, function(err, db) {
-	if (err) throw err;
+	//if (err) throw err;
 	var dbo=db.db("knowyash");
 	//var saveObject = {};
 
