@@ -100,10 +100,11 @@ animation:blinka 1s infinite;
 
 
 .protitle{
-	border-left: 5px solid white;
+	border-left: 5px solid #80DEEA;
 	padding-left: 5px!important;
 	padding: 3px;
 	margin-bottom: 7px;
+	color: #18FFFF;
 }
 
 .bullet{
@@ -117,5 +118,18 @@ animation:blinka 1s infinite;
 	width: 1000px;
 	display: flex;
 	text-align: center;
-	position: relative;
+	
+
+}
+.fullbar{
+	background-color: #E0E0E0;
+	width: 50%;
+	height: 3px;
+	border-radius: 50px
+}
+.progress{
+
+height: 8px;
+color: #E0E0E0;
+border-radius: 50px
 }
