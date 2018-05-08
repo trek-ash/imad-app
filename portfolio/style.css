@@ -106,5 +106,16 @@ animation:blinka 1s infinite;
 	margin-bottom: 7px;
 }
 
+.bullet{
+	background: grey;
+	height: 20px;
+	width: 20px;
+	border-radius: 10000px;
+	float: left;
 }
-
+.divhead{
+	width: 1000px;
+	display: flex;
+	text-align: center;
+	position: relative;
+}

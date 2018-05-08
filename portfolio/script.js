@@ -3,7 +3,15 @@ $(window).scroll(function(){
                 $(".card").animate({'opacity':'1'},1500);
              });
 $(".buzz").mouseenter(()=>{
-$(".buzz").attr("src","as");
+		setTimeout(()=>{
+	$(".buzz").attr("src","portfolio/buzznow1.png");		
+	},1000);
+		setTimeout(()=>{
+	$(".buzz").attr("src","portfolio/buzznow2.png");		
+	},2000);
+		setTimeout(()=>{
+	$(".buzz").attr("src","portfolio/buzznow.png");		
+	},3000);
 });
 $(".buzz").mouseleave(()=>{
 $(".buzz").attr("src","portfolio/buzznow.png");

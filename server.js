@@ -42,6 +42,12 @@ app.get('/portfolio/yash.png',function(req,res){
 app.get('/portfolio/buzznow.png',function(req,res){
  res.sendFile(path.join(__dirname,'portfolio','buzznow.png'));
 });
+app.get('/portfolio/buzznow1.png',function(req,res){
+ res.sendFile(path.join(__dirname,'portfolio','buzznow1.png'));
+});
+app.get('/portfolio/buzznow2.png',function(req,res){
+ res.sendFile(path.join(__dirname,'portfolio','buzznow2.png'));
+});
 app.get('/portfolio/yizzy.png',function(req,res){
  res.sendFile(path.join(__dirname,'portfolio','yizzy.png'));
 });
