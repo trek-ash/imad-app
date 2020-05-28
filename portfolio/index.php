@@ -40,12 +40,11 @@
 					<center><h3 class="media-heading">Yash Singh|<small>Web Designer and Developer</small></h3></center>
 					<hr>
 					<p >
-					I am a Dreamer,Learner and an aspiring Web Designer and Developer.I love working on projects based on web Designing and Development.
-					I started learnig with basics of <b>HTML,CSS</b> continued to learn <b>Javascript</b> to add on my skills of Web 
-					designing.To add on my responsive web-designing abilities,I added <b>Bootstrap</b> to my skills.To add on to my development skills,I learned <b>PHP</b>.<br>
-					Apart from these,I have knowledge of languages like <b>C,Java,Pyhton</b>. 
-					</p>
-					<p >
+					I am a Dreamer,Learner and developer.
+					I love working on challenging projects and real life problems.<br>
+					The tech stacks I prefer for development are MERN and MEAN stack, though not the limitations to execute a solution.
+					
+					<br><br>
 					I enjoy watching Sci-fi,Murder Mystery and Thriller Movies and various Series,<b>Game of thrones</b> being on of the favourites. 
 					</p>
 					<h4><i><b> Want to work together?I'd love to hear from you.</b></i></h4>
